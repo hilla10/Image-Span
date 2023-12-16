@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+span {
+    font-size: 0.8rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid>div {
+    cursor: pointer;
+    height: 210px;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s ease-in;
+}
+
+.grid>div:hover {
+    opacity: 0.7;
+    transform: scale(0.98);
+}
+
+
+.bg1 {
+    cursor: pointer;
+    background: url('img/bg1.jpg') no-repeat center center / cover;
+
+}
+
+.bg2 {
+    cursor: pointer;
+    background: url('img/bg2.jpg') no-repeat center center / cover;
+    color: #000;
+
+}
+
+.grid>div:nth-of-type(1) {
+    grid-column: span 2;
+}
+
+.grid>div:nth-of-type(6) {
+    grid-column: span 2;
+}
+
+.grid>div:nth-of-type(9) {
+    grid-column: span 2;
+}
+
+.grid>div:nth-of-type(10) {
+    grid-column: span 2;
+}
